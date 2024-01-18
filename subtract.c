@@ -1,0 +1,32 @@
+#include "monty.h"
+/**
+ * subtract_top_elements - Subtraction operation.
+ * @stack: Pointer to the head.
+ * @line_number: Line number.
+ *
+ * Description: Subtracts top element from the second top element.
+ *
+ * Return: No explicit return.
+ */
+void subtract_top_elements(stack_t **stack, unsigned int line_number)
+{
+	stack_t *aux;
+	int sus, nodes;
+
+	aux = *stack;
+	for (nodes = 0; aux != NULL; nodes++)
+		aux = aux->next;
+	if (nodes < 2)
+	{
+		fprintf(stderr, "L%d: can't sub, stack too short\n", line_number);
+		fclose(bus.file);
+		free(bus.content);
+		free_stack(*stack);
+		exit(EXIT_FAILURE);
+	}
+	aux = *stack;
+	sus = aux->next->n - aux->n;
+	aux->next->n = sus;
+	*stack = aux->next;
+	free(aux);
+}
