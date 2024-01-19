@@ -47,7 +47,7 @@ void openfile(char *filename);
 int parseline(char *buffer, int line_number, int format);
 void readfile(FILE *);
 int lenchars(FILE *);
-void find_func(char *, char *, int, int);
+void findfunc(char *, char *, int, int);
 
 /*Stack operations*/
 stack_t *create_node(int n);

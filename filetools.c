@@ -66,7 +66,7 @@ int parseline(char *buffer, int linenumber, int format)
 	if (strcmp(opcode, "queue") == 0)
 		return (1);
 
-	find_func(opcode, value, linenumber, format);
+	findfunc(opcode, value, linenumber, format);
 	return (format);
 }
 
