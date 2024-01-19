@@ -52,14 +52,14 @@ void findfunc(char *, char *, int, int);
 /*Stack operations*/
 stack_t *createnode(int n);
 void freenodes(void);
-void print_stack(stack_t **, unsigned int);
-void add_to_stack(stack_t **, unsigned int);
+void printstack(stack_t **, unsigned int);
+void add_to_st(stack_t **, unsigned int);
 void add_to_que(stack_t **, unsigned int);
 
 void callfun(op_func, char *, char *, int, int);
 
-void print_top(stack_t **, unsigned int);
-void pop_top(stack_t **, unsigned int);
+void printtop(stack_t **, unsigned int);
+void poptop(stack_t **, unsigned int);
 void nop(stack_t **, unsigned int);
 void swap_nodes(stack_t **, unsigned int);
 
