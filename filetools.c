@@ -2,7 +2,7 @@
 
 /**
  * openfile - opens file
- * @file_name: the file name
+ * @filename: the file name
  * Return: void
  */
 
@@ -20,7 +20,7 @@ void openfile(char *filename)
 
 /**
  * readfile - reads file
- * @fd: pointer to file
+ * @fdd: pointer to file
  * Return: void
  */
 
@@ -42,7 +42,7 @@ void readfile(FILE *fdd)
  * parseline - Separates each line into tokens
  *
  * @buffer: the line from the file
- * @line_number: theline number
+ * @linenumber: theline number
  * @format:  storage format. If 0 Nodes
  * if 1 nodes will be entered as a queue.
  * Return: Returns 0 if the opcode is stack. 1 if queue.

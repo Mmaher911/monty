@@ -79,7 +79,7 @@ void subnodes(stack_t **stack, unsigned int linenumber)
 /**
  * divnodes - Add top two elements of the stack.
  * @stack: pointing to top node of the stack.
- * @line_number: the line number of of the opcode.
+ * @linenumber: the line number of of the opcode.
  */
 void divnodes(stack_t **stack, unsigned int linenumber)
 {
