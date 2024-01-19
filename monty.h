@@ -50,11 +50,11 @@ int lenchars(FILE *);
 void findfunc(char *, char *, int, int);
 
 /*Stack operations*/
-stack_t *create_node(int n);
-void free_nodes(void);
+stack_t *createnode(int n);
+void freenodes(void);
 void print_stack(stack_t **, unsigned int);
 void add_to_stack(stack_t **, unsigned int);
-void add_to_queue(stack_t **, unsigned int);
+void add_to_que(stack_t **, unsigned int);
 
 void callfun(op_func, char *, char *, int, int);
 

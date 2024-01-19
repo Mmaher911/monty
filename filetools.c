@@ -150,11 +150,11 @@ void callfun(op_func func, char *op, char *val, int ln, int format)
 			if (isdigit(val[i]) == 0)
 				error(5, ln);
 		}
-		node = create_node(atoi(val) * flag);
+		node = createnode(atoi(val) * flag);
 		if (format == 0)
 			func(&node, ln);
 		if (format == 1)
-			add_to_queue(&node, ln);
+			add_to_que(&node, ln);
 	}
 	else
 		func(&head, ln);
